@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Giuseppe Gallo Cassarino">
+    <meta name="description" content="esercitazione">
+    <meta name="keywords" content="html5, css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!---per mobile-->
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+
+
+    <title>Bakery</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="img/logo.png" alt="Bakery" width="150" height="150">
+  </header>
+
+  <!-- HERO -->
+  <div id="hero">
+    <picture>
+      <source media="(min-width: 990px)" srcset="img/top-d.jpg">
+
+      <img src="img/top-d.jpg" alt="Bakery" width="700" height="700">
+    </picture>
+    <!--- <img src="img/top-d.jpg" alt="Tortine carine" width="1920" height="750"> -->
+  </div>
+
+
+  <!-- TESTO -->
+  <div id="testo">
+    <h1>Benvenuti su Bakery</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ullam sed animi, fugit temporibus veniam quis repellat est nemo, totam distinctio eaque numquam recusandae dolores hic? Dolorum deserunt ea excepturi!</p>
+    <a href="#form" class="pulsante">Contattaci</a>
+  </div>
+
+     <!-- VANTAGGI -->
+  <div id="vantaggi">
+
+    <div class="flex-container">
+ 
+      <div class="flex-item">
+        <h2>Vantaggio 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+ 
+      <div class="flex-item">
+        <h2>Vantaggio 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FORM -->
+
+  <div id="form">
+
+
+    <form id="mio-form" name="mio-form" action="#">
+
+      <h2>Contattaci</h2>
+
+            
+      
+
+      <div class="flex-form">
+
+        
+
+        <div class="input-div">
+             
+           <label for="opzione">Seleziona un opzione*</label>
+            <select name="seleziona" id="reparto">
+            <option value="none">None</option>
+            <option value="Commerciale">Commerciale</option>
+            <option value="Sviluppo">Sviluppo</option>
+    
+            </select>
+        </div>
+          <div class="input-div">
+            <label for="nome">Nome e Cognome*</label>
+            <input type="text" id="nome" name="nome" placeholder="Scrivi qui il tuo nome e cognome" required>
+           </div>
+
+        <div class="input-div">
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" placeholder="Scrivi qui la tua email *" required>
+        </div>
+
+        <div class="input-div larghezza100">
+          <label for="email">Commento*</label>
+          <textarea id="testo-form" name="testo-form" placeholder="Scrivi qui il tuo messaggio"></textarea>
+        </div>
+
+        <div class="input-div larghezza100">
+          <input type="submit" id="submit-form" name="submit-form" value="Invia il form" class="pulsante">
+        </div>
+
+        <p>Acconsento che i dati personali</p> <br>
+         <label for="edit-privacy-si">Si</label>
+         <input type="radio" id="edit-privacy-si" name="privacy" value="si"/>
+
+         <label for="edit-privacy-no">No</label>
+         <input type="radio" id="edit-privacy-no" name="privacy" value="no"/>
+
+
+
+      </div>
+
+    </form>
+
+  </div>
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Edgemony P.I. 123456789 - Credits by <a href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit" target="_blank">Chiara Caruso</a></p>
+  </footer>
+    
+</body>
+</html>
