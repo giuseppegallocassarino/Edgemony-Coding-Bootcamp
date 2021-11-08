@@ -1,0 +1,87 @@
+body {
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background-color: white ;
+  }
+
+  h1 {
+      padding-top: 30;
+      
+  }
+  
+  .modal {
+    position: absolute;
+  
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    opacity: 0;
+  z-index: -1;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 16px;
+    box-shadow: 0 0 16px black;
+    background: rgb(43, 43, 43);
+    color: rgb(240, 240, 240);
+    
+    transition: opacity 0.35s;
+  }
+  
+  .modal h3 {
+    margin: 5px 0;
+    font-size: 1.6rem;
+  }
+  
+  .modal p {
+    color: rgb(169, 169, 169);
+    padding: 10px 30px;
+    font-size: 1.1rem;
+  }
+  
+  .modal img {
+    width: 50px;
+  }
+  
+  .modal__buttons {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modal__buttons button {
+    margin-left: 5px;
+    padding: 7.5px 15px;
+    border-radius: 6px;
+    color: black;
+    font-weight: bold;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  
+  #btn-accept {
+    border: 0;
+    background: lightseagreen;
+    opacity: 0.6;
+    transition: all 0.35s;
+  }
+  
+  #btn-accept:hover {
+    opacity: 1;
+  }
+  
+  #btn-accept:active {
+    opacity: 1;
+    background: lightskyblue;
+  }
+  
+  #btn-deny {
+    background: lightseagreen;
+  }
