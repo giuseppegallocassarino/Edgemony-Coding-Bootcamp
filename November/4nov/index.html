@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Widget contatti</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main>
+    <header>
+      <h1>Widget contatti in JavaScript</h1>
+    </header>
+
+    <form>
+      <label for="search">Cerca tra i contatti:</label>
+      <input type="text" name="search" id="search"
+        placeholder="es: pippo" autocomplete="off" />
+      <button>Cerca</button>
+    </form>
+
+    <!---- <ul id="list">  
+       
+       
+      <li>
+        <h3>Rick Sanchez</h3>
+        <p><strong>Phone:</strong> <a href="tel:+39 3657345657">+39 3657345657</a></p>
+        <p><strong>Email:</strong> <a href="mailto:rick@rickandmorty.com">rick@rickandmorty.com</a></p>
+      </li>
+      
+      
+    </ul> --->
+  
+        <form class="form2">
+
+
+
+            <label for="names">Agiungi un contatti</label>
+            <input type="text" name="names" id="names" placeholder="es: Mario Rossi" autocomplete="off" required>
+
+            <label for="email">Agiungi un Email</label>
+            <input type="text" name="email" id="email" placeholder="mariorossi@libero.it" autocomplete="off" required>
+
+            <label for="phone">Agiungi un numero</label>
+            <input type="text" name="phone" id="phone" placeholder="356456534368" autocomplete="off" required>
+            
+            
+            <button type="submit" class="addBtn">Add list</button>
+
+            <ul id="list"> 
+
+
+            </ul>
+
+        </form>
+    
+
+  </main>
+  
+  <script src="js/data.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
