@@ -59,6 +59,12 @@ const solarSystem = [
 const nomiIta = solarSystem.map(NewName);
 
 console.log(nomiIta);
+
+  // solarSystem.map (planet => { //aggiunge nome = sole a tutti gli elemnti dell'oggetto
+   // planet.nome= 'sole'
+   //  });
+
+   // solarSystem[0].pianeta= 'bello'  aggiunge pianeta = bello all'index 0 all'array dello'oggetto
   
   const terrPlanets = solarSystem.filter(terrestrial);
   const smallTerrPlanets = terrPlanets.filter(smallPlanets);
