@@ -77,8 +77,8 @@ function sendCredentials(username) {
   //     else console.warn("Questo è un errore nuovo");
   
   //     // Alternativa migliore SWITCH!
-  //   } finally {
-  //     console.log("Finally!");
+  //   }   finally {
+  //       console.log("Finally!");
   //   }
   // });
   
