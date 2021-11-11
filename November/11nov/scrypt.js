@@ -39,6 +39,31 @@ function createProduct(parent, imgUrl, productTitle, textPrice) {
   const wrapperProducts = document.querySelector(".wrapper__products");
   
 //   function renderProducts() {
-    products.map((product) => {
-    createProduct(wrapperProducts, product.image, product.title, product.price);
+    //products.map((product) => {
+    //createProduct(wrapperProducts, product.image, product.title, product.price);
+    //});
+
+   
+    
+    
+    function renderProduct(parent) {
+      products.map((product) => {
+          createProduct(parent, product.image, product.title, product.price);
+      });
+    }
+
+
+    const alfabeticoBtn = document.querySelector(".ordbtn");
+
+    alfabeticoBtn.addEventListener('click', () => {
+
+      products.sort((a,b) => (a.title > b.title) ? 1 : -1);
+      
+      while(wrapperProducts.firstChild) wrapperProducts.removeChild(wrapperProducts.lastChild);
+  
+      renderProduct(wrapperProducts);
+
     });
+
+      renderProduct(wrapperProducts);
+      
