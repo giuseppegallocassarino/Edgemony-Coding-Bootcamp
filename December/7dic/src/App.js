@@ -1,4 +1,4 @@
-import foto from './logo-deliveroo.jpeg';
+import foto from './image.jpeg';
 import './App.css';
 
 function App() {
