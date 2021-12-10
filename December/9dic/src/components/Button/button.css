@@ -1,0 +1,14 @@
+button {
+    height: 30px;
+    width: 150px;
+    border-radius: 7px;
+    margin-top: 40px;
+    align-items: center;
+
+    border: none;
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+
+}
